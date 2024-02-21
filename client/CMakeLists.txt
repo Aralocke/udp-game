@@ -12,5 +12,5 @@ file(GLOB CLIENT_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/*.h")
 source_group("Source Files" FILES ${CLIENT_SOURCES})
 source_group("Header Files" FILES ${CLIENT_HEADERS})
 
-target_link_libraries(client PRIVATE common)
+target_link_libraries(client PRIVATE common tests)
 target_sources(client PRIVATE ${CLIENT_HEADERS} ${CLIENT_SOURCES})
